@@ -1,0 +1,17 @@
+:root{--bg:#f5f7f4;--card:#fff;--tx:#1b2a1f;--mu:#667;--pr:#1f7a43;--bd:#dde3dc;--pt:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#121a14;--card:#1b261e;--tx:#e8efe9;--mu:#9ab;--pr:#3fae6a;--bd:#2b3a2f;--pt:#06140b}}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--tx);font-size:15px}
+header{background:var(--pr);color:var(--pt);padding:12px 14px;display:flex;justify-content:space-between;align-items:center}
+main{max-width:900px;margin:auto;padding:12px}nav{display:flex;gap:6px;overflow-x:auto;padding:4px 0 10px}
+nav button{white-space:nowrap;background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:20px;padding:8px 14px}
+nav button.on{background:var(--pr);color:var(--pt)}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px;margin-bottom:10px}
+input,select,textarea{width:100%;padding:10px;margin:4px 0;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit}
+button{font:inherit;cursor:pointer}.b{background:var(--pr);color:var(--pt);border:0;border-radius:8px;padding:10px 14px;margin-top:4px}
+.r{background:#c0392b;color:#fff;border:0;border-radius:6px;padding:4px 8px}.mu{color:var(--mu);font-size:13px}
+.g{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.n{font-size:26px;font-weight:700;color:var(--pr)}
+.w{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:6px;border-bottom:1px solid var(--bd);text-align:left}
+img,video{max-width:100%;border-radius:8px}.vg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px}
+.vg div{position:relative}.vg span{position:absolute;left:6px;bottom:6px;background:#000a;color:#fff;padding:1px 6px;border-radius:4px;font-size:12px}
+.live{background:#c0392b;color:#fff;border-radius:4px;padding:1px 6px;font-size:12px}
+#menu{display:none;background:var(--card);border-bottom:1px solid var(--bd)}#menu button{display:block;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--bd);padding:14px;color:var(--tx)}

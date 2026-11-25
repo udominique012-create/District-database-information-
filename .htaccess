@@ -1,0 +1,10 @@
+# Umutekano w'urubuga (frontend). Niba ukoresha Jitsi yawe, simbuza meet.jit.si n'domain yayo.
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "DENY"
+Header always set Referrer-Policy "no-referrer"
+Header always set Permissions-Policy "geolocation=(), camera=(self \"https://meet.jit.si\"), microphone=(self \"https://meet.jit.si\")"
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://meet.jit.si; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self' https:; connect-src 'self' https:; frame-src https://meet.jit.si; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+</IfModule>
+Options -Indexes
